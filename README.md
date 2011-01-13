@@ -13,11 +13,11 @@ Install
 
 Add to <code>Gemfile</code>:
 
-   gem 'handy_form'
+    gem 'handy_form'
 
 Then run:
 
-   bundle install
-   rake handy_form:css_install
+    bundle install
+    rake handy_form:css_install
 
 
