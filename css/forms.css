@@ -1,0 +1,40 @@
+/*
+ * Handy Forms
+ ***************/
+
+.handy_form .text_field_row input,
+.handy_form .password_field_row input,
+.handy_form .select_row select,
+.handy_form .text_area_row textarea,
+.handy_form .check_box_row input,
+.handy_form .radio_button_row input {
+  font-size: 14px;
+  padding: 3px;
+  width: 150px;
+}
+
+.handy_form label {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.handy_form .hint {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.handy_form.stacked label,
+.row.stacked label {
+  display: block;
+  clear: both;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.handy_form .row {
+  margin-bottom: 18px;
+}
+
+.handy_form .error-message {
+  color: red;
+}
