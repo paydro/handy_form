@@ -1,4 +1,3 @@
 TODO
 
-* Add generic stylesheets for the forms
-* Add rake tasks to copy stylesheets into rails' stylesheet dir
+* Add readme and docs
