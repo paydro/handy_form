@@ -1,9 +1,11 @@
 module HandyForm
   class Builder < ::ActionView::Helpers::FormBuilder
-    (field_helpers -
-      ["form_for", "fields_for",
-       "apply_form_for_options!", "label",
-       "hidden_field"]
+    (
+      # select tags need reworking - 3rd argument is specific to select
+      ["select", "date_select", "datetime_select"] +
+      field_helpers -
+      ["form_for", "fields_for", "apply_form_for_options!",
+      "label", "hidden_field"]
     ).each do |selector|
       define_method(selector) do |method, *args|
         options = args.extract_options!
