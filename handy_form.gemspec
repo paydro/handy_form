@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Peter Bui"]
   s.email       = ["peter@paydrotalks.com"]
-  s.homepage    = "http://rubygems.org/gems/handy_form"
+  s.homepage    = "http://github.com/paydro/handy_form"
   s.summary     = "A handy Rails 3 Form Builder"
   s.description = "Builds forms with a standard template that has labels, hints, and validations"
 
