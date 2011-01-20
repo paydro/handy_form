@@ -31,7 +31,7 @@ module HandyForm
 
         # Add the selector (input type) to the wrapper so that
         # CSS rules can target the whole row.
-        add_selector_to_wrapper_class!(selector, handy_options)
+        add_selector_to_wrapper_class!(selector, method, handy_options)
 
         # Add any error messages to handy options.
         if object.errors[method.to_s].any?
@@ -104,11 +104,11 @@ module HandyForm
         ["check_box", "radio_button"].include?(selector.to_s)
       end
 
-      def add_selector_to_wrapper_class!(selector, options = {})
+      def add_selector_to_wrapper_class!(selector, method, options = {})
         options[:wrapper] ||= {}
 
         # This allows for CSS targeting for selector types
-        options[:wrapper][:class] = "#{selector}_row " +
+        options[:wrapper][:class] = "#{selector}_row #{method}_row " +
                                     "#{options[:wrapper][:class]}"
 
         options[:wrapper][:class].strip!
