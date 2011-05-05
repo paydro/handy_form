@@ -65,9 +65,9 @@ module HandyForm
           messages.first
         else
           content_tag :ul do
-            items = ""
+            items = "".html_safe
             messages.each do |message|
-              items << content_tag(:li, message)
+              items << content_tag(:li, message.html_safe)
             end
             items
           end
