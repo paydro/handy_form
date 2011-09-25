@@ -62,7 +62,7 @@ module HandyForm
 
       def build_error_string(messages)
         if messages.size == 1
-          messages.first
+          messages.first.html_safe
         else
           content_tag :ul do
             items = "".html_safe
