@@ -108,7 +108,7 @@ module HandyForm
         options[:wrapper] ||= {}
 
         # This allows for CSS targeting for selector types
-        options[:wrapper][:class] = "#{selector}_row #{method}_row " +
+        options[:wrapper][:class] = "#{selector}-row #{method}-row " +
                                     "#{options[:wrapper][:class]}"
 
         options[:wrapper][:class].strip!

@@ -10,7 +10,8 @@ module HandyForm
     def merge_builder_options!(options)
       options.merge!(:builder => HandyForm::Builder)
       options[:html] ||= {}
-      options[:html][:class] = "handy_form #{options[:html][:class]}".strip
+      options[:html][:class] = "handy-form #{options[:html][:class]}".strip
+      options[:html][:novalidate] = true unless options[:html].key?(:novalidate)
     end
 
     def handy_field_wrapper(field, field_label, options = {})
